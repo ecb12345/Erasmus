@@ -1,0 +1,14 @@
+# system
+.DS_Store
+
+# materiały robocze (nie są częścią strony)
+Infopack/
+
+# Next.js / Node
+node_modules/
+.next/
+out/
+next-env.d.ts
+*.tsbuildinfo
+.env*.local
+npm-debug.log*
