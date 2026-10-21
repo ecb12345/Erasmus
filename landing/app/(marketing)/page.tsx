@@ -327,6 +327,54 @@ export default function HomePage() {
               </article>
             ))}
           </div>
+
+          {/* Jak dojechać */}
+          <div className="mt-12 grid gap-6 md:grid-cols-2">
+            <Link
+              id="airport-directions"
+              href="/airport"
+              className="group flex flex-col justify-between bg-ink p-8 text-white transition duration-300 hover:-translate-y-1 hover:bg-primary"
+            >
+              <div>
+                <p className="eyebrow text-white/60">Getting there</p>
+                <h3 className="mt-3 text-2xl">From the airport to the hostel</h3>
+                <p className="mt-3 text-sm leading-relaxed text-white/75">
+                  Step-by-step directions from Krakow Airport (KRK) by train, bus or taxi.
+                </p>
+              </div>
+              <span className="mt-8 font-heading text-sm uppercase tracking-[0.15em]">
+                See directions <span aria-hidden="true" className="inline-block transition group-hover:translate-x-1">→</span>
+              </span>
+            </Link>
+
+            <details id="station-directions" className="group bg-sand p-8 [&_summary::-webkit-details-marker]:hidden">
+              <summary className="cursor-pointer list-none">
+                <p className="eyebrow">Getting there</p>
+                <h3 className="mt-3 text-2xl text-ink">From the railway station to the hostel</h3>
+                <p className="mt-3 text-sm leading-relaxed text-ink-soft">
+                  Kraków Główny → WOW Hostel · approx. 10 minutes on foot
+                </p>
+                <span className="mt-8 inline-block font-heading text-sm uppercase tracking-[0.15em] text-ink">
+                  <span className="group-open:hidden">Show directions ↓</span>
+                  <span className="hidden group-open:inline">Hide directions ↑</span>
+                </span>
+              </summary>
+              <ol className="mt-6 list-decimal space-y-3 border-t border-sand-dark pt-6 pl-5 text-sm leading-relaxed text-ink-soft">
+                <li>Follow the signs to the exit towards the Old Town (Stare Miasto) and the square in front of the historic station building.</li>
+                <li>Walk to the Basztowa / Lubicz junction at the edge of the Planty park.</li>
+                <li>Continue straight onto <strong className="text-ink">Westerplatte</strong> street, with the park on your right.</li>
+                <li>WOW Hostel is at <strong className="text-ink">Westerplatte 8/2</strong>, before the Poczta Główna tram stop.</li>
+              </ol>
+              <a
+                href="https://www.google.com/maps/dir/?api=1&origin=Krak%C3%B3w+G%C5%82%C3%B3wny&destination=Westerplatte+8,+31-033+Krak%C3%B3w&travelmode=walking"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-6 inline-block text-sm text-primary underline underline-offset-4"
+              >
+                Open walking route in Google Maps ↗
+              </a>
+            </details>
+          </div>
         </div>
       </section>
 
