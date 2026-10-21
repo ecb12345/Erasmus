@@ -3,7 +3,8 @@ import Link from "next/link";
 
 // Wklej tu link do formularza MS Forms (Udostępnij → Kopiuj link),
 // np. "https://forms.office.com/r/AbCdEf1234"
-const MS_FORMS_URL = "";
+const MS_FORMS_URL =
+  "https://forms.office.com/Pages/ResponsePage.aspx?id=gnn_H4wbokqZO0cCM6y0XK-adgoKk71GgGssCJ3e1V1UQ0Y5UlRDSENKOFlLN1c3NTVHUVhPUVg3Ui4u";
 
 const pains = [
   "You want to lead effectively, but you are not sure how to guide people without micromanaging them.",
