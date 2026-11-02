@@ -60,6 +60,10 @@ const logistics = [
     text: "You will stay at WOW Hostel Kraków in the Old Town (Westerplatte 8/2, 31-033 Kraków). Rooms are shared with other participants, and check-in starts at 14:00 (with a 24-hour reception and luggage storage if you arrive earlier).",
   },
   {
+    title: "Training venue",
+    text: "Sessions take place at NordicHouse – Scandinavian Business Center, ul. Studencka 15/2a, 31-116 Kraków. It is a short walk from the hostel through the Old Town (approx. 10 minutes).",
+  },
+  {
     title: "Meals",
     text: "Breakfast is served at the hostel or training venue. For lunch, you choose between meat and vegan options at a local bistro, and dinners are catered. Your first meal is dinner on arrival day (13 December).",
   },
@@ -374,6 +378,34 @@ export default function HomePage() {
                 Open walking route in Google Maps ↗
               </a>
             </details>
+          </div>
+
+          {/* Sala szkoleniowa */}
+          <div id="venue" className="mt-6 bg-sand-light p-8 sm:p-10">
+            <p className="eyebrow">Training venue</p>
+            <h3 className="mt-3 text-2xl text-ink">NordicHouse – Scandinavian Business Center</h3>
+            <address className="mt-3 not-italic leading-relaxed text-ink-soft">
+              ul. Studencka 15/2a<br />
+              31-116 Kraków
+            </address>
+            <h4 className="mt-8 font-heading text-lg text-ink">
+              From the hostel to the training room (approx. 10 minutes on foot)
+            </h4>
+            <ol className="mt-4 list-decimal space-y-3 pl-5 text-sm leading-relaxed text-ink-soft">
+              <li>Leave WOW Hostel (Westerplatte 8/2) and walk along the Planty park towards the Old Town centre.</li>
+              <li>Continue through the Planty / Old Town streets towards the Jagiellonian University area.</li>
+              <li>Turn into <strong className="text-ink">Studencka</strong> street and look for number <strong className="text-ink">15</strong>.</li>
+              <li>NordicHouse is at <strong className="text-ink">Studencka 15/2a</strong> — enter the building and follow the signs to the Scandinavian Business Center.</li>
+            </ol>
+            <a
+              id="venue-directions"
+              href="https://www.google.com/maps/dir/?api=1&origin=Westerplatte+8,+31-033+Krak%C3%B3w&destination=Studencka+15,+31-116+Krak%C3%B3w&travelmode=walking"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-6 inline-block text-sm text-primary underline underline-offset-4"
+            >
+              Open walking route in Google Maps ↗
+            </a>
           </div>
         </div>
       </section>
