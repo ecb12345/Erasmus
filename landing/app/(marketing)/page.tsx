@@ -473,8 +473,9 @@ export default function HomePage() {
             Complete the Registration Form <span aria-hidden="true">→</span>
           </a>
           <p className="mx-auto mt-6 max-w-xl text-sm text-white/70">
-            After submitting the form, your sending organization will contact you to confirm your
-            spot and share practical travel preparation steps.
+            After we receive your application, we will get back to you and confirm your
+            registration. Your sending organization will then share practical travel preparation
+            steps.
           </p>
         </div>
       </section>
