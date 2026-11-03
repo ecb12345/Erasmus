@@ -199,7 +199,7 @@ export default function HomePage() {
                   Secure Your Spot Now <span aria-hidden="true">→</span>
                 </Link>
                 <p className="mt-3 text-xs text-ink-muted">
-                  Only 3 participants per partner organization. Applications are processed in
+                  Only 3-5 participants per partner organization. Applications are processed in
                   order of arrival.
                 </p>
               </div>
